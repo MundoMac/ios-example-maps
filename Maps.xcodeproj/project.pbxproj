@@ -14,6 +14,8 @@
 		F18A270A1A8325EE0005978F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18A27091A8325EE0005978F /* Images.xcassets */; };
 		F18A270D1A8325EE0005978F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18A270B1A8325EE0005978F /* LaunchScreen.xib */; };
 		F18A27191A8325EE0005978F /* MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F18A27181A8325EE0005978F /* MapsTests.m */; };
+		F18A27231A8325FC0005978F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18A27221A8325FC0005978F /* MapKit.framework */; };
+		F18A27261A8326520005978F /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = F18A27251A8326520005978F /* Company.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		F18A27121A8325EE0005978F /* MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18A27171A8325EE0005978F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F18A27181A8325EE0005978F /* MapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsTests.m; sourceTree = "<group>"; };
+		F18A27221A8325FC0005978F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F18A27241A8326520005978F /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		F18A27251A8326520005978F /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A27231A8325FC0005978F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		F18A26F01A8325EE0005978F = {
 			isa = PBXGroup;
 			children = (
+				F18A27221A8325FC0005978F /* MapKit.framework */,
 				F18A26FB1A8325EE0005978F /* Maps */,
 				F18A27151A8325EE0005978F /* MapsTests */,
 				F18A26FA1A8325EE0005978F /* Products */,
@@ -81,11 +88,11 @@
 		F18A26FB1A8325EE0005978F /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				F18A27001A8325EE0005978F /* AppDelegate.h */,
-				F18A27011A8325EE0005978F /* AppDelegate.m */,
 				F18A27031A8325EE0005978F /* ViewController.h */,
 				F18A27041A8325EE0005978F /* ViewController.m */,
 				F18A27061A8325EE0005978F /* Main.storyboard */,
+				F18A27241A8326520005978F /* Company.h */,
+				F18A27251A8326520005978F /* Company.m */,
 				F18A27091A8325EE0005978F /* Images.xcassets */,
 				F18A270B1A8325EE0005978F /* LaunchScreen.xib */,
 				F18A26FC1A8325EE0005978F /* Supporting Files */,
@@ -96,6 +103,8 @@
 		F18A26FC1A8325EE0005978F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F18A27001A8325EE0005978F /* AppDelegate.h */,
+				F18A27011A8325EE0005978F /* AppDelegate.m */,
 				F18A26FD1A8325EE0005978F /* Info.plist */,
 				F18A26FE1A8325EE0005978F /* main.m */,
 			);
@@ -222,6 +231,7 @@
 				F18A27051A8325EE0005978F /* ViewController.m in Sources */,
 				F18A27021A8325EE0005978F /* AppDelegate.m in Sources */,
 				F18A26FF1A8325EE0005978F /* main.m in Sources */,
+				F18A27261A8326520005978F /* Company.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

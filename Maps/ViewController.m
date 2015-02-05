@@ -7,21 +7,44 @@
 //
 
 #import "ViewController.h"
+#import "Company.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidLoad];
+
+    // Load some comapanies
+    Company *comp1 = [Company new];
+    comp1.name = @"Company 1";
+    comp1.address = @"Some Address 1";
+    comp1.latitude = -34.5;
+    comp1.longitude = -56.5;
+    
+    Company *comp2 = [Company new];
+    comp2.name = @"Company 2";
+    comp2.address = @"Some Address 2";
+    comp2.latitude = -34.55;
+    comp2.longitude = -56.15;
+    
+    Company *comp3 = [Company new];
+    comp3.name = @"Company 3";
+    comp3.address = @"Some Address 3";
+    comp3.latitude = -34.0;
+    comp3.longitude = -56.0;
+    
+    self.companies = @[comp1, comp2, comp3];
+    
+    // Show companies on Map
+    [self.mapView addAnnotations:self.companies];
+    
 }
 
 @end
