@@ -16,6 +16,7 @@
 		F18A27191A8325EE0005978F /* MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F18A27181A8325EE0005978F /* MapsTests.m */; };
 		F18A27231A8325FC0005978F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18A27221A8325FC0005978F /* MapKit.framework */; };
 		F18A27261A8326520005978F /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = F18A27251A8326520005978F /* Company.m */; };
+		F1DBEF461AC1E4C600448749 /* LATU.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F1DBEF451AC1E4C600448749 /* LATU.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F18A27221A8325FC0005978F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F18A27241A8326520005978F /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		F18A27251A8326520005978F /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		F1DBEF451AC1E4C600448749 /* LATU.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LATU.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		F18A26F01A8325EE0005978F = {
 			isa = PBXGroup;
 			children = (
+				F1DBEF451AC1E4C600448749 /* LATU.gpx */,
 				F18A26FB1A8325EE0005978F /* Maps */,
 				F18A27151A8325EE0005978F /* MapsTests */,
 				F1698AA61A832F04000B4CD1 /* Frameworks */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18A27081A8325EE0005978F /* Main.storyboard in Resources */,
+				F1DBEF461AC1E4C600448749 /* LATU.gpx in Resources */,
 				F18A270D1A8325EE0005978F /* LaunchScreen.xib in Resources */,
 				F18A270A1A8325EE0005978F /* Images.xcassets in Resources */,
 			);
