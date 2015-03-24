@@ -95,9 +95,9 @@
 		F18A26F01A8325EE0005978F = {
 			isa = PBXGroup;
 			children = (
-				F1698AA61A832F04000B4CD1 /* Frameworks */,
 				F18A26FB1A8325EE0005978F /* Maps */,
 				F18A27151A8325EE0005978F /* MapsTests */,
+				F1698AA61A832F04000B4CD1 /* Frameworks */,
 				F18A26FA1A8325EE0005978F /* Products */,
 			);
 			sourceTree = "<group>";

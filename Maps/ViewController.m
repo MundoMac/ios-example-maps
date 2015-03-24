@@ -9,9 +9,10 @@
 #import "ViewController.h"
 #import "Company.h"
 
-@interface ViewController ()
+@interface ViewController () <CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -20,7 +21,22 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    
+    // Check for iOS 8
+    if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
+    self.mapView.showsUserLocation = YES;
+    
+    [self addCompanies];
+}
 
+- (void)addCompanies
+{
     // Load some comapanies
     Company *comp1 = [Company new];
     comp1.name = @"Company 1";
@@ -44,7 +60,6 @@
     
     // Show companies on Map
     [self.mapView addAnnotations:self.companies];
-    
 }
 
 @end
