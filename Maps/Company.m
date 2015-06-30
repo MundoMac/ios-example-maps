@@ -25,7 +25,7 @@
     return self.name;
 }
 
--(NSString *)subtitle
+- (NSString *)subtitle
 {
     return self.address;
 }

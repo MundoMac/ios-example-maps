@@ -22,13 +22,15 @@
 
     [super viewDidLoad];
     
-    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;
     
     // Check for iOS 8
     if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
+    
+    [self.locationManager startUpdatingLocation];
     
     self.mapView.showsUserLocation = YES;
     
